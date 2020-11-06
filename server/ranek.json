@@ -1,0 +1,44 @@
+{
+  "usuario": [
+    {
+      "id": "igortuag@gmail.com",
+      "email": "igortuag@gmail.com",
+      "nome": "Igor Tuag",
+      "senha": 123,
+      "rua": "Rua Ali Perto",
+      "cep": "12345678",
+      "numero": "42",
+      "estado": "ES",
+      "Cidade": "Vila Velha"
+    }
+  ],
+  "produto": [
+    {
+      "id": "notebook",
+      "nome": "Notebook",
+      "usuario_id": "igortuag@gmail.com",
+      "preco": "4999",
+      "vendido": "false",
+      "descricao": "Esse é um novo notebook.",
+      "fotos": null
+    },
+    {
+      "id": "tablet",
+      "nome": "Tablet",
+      "usuario_id": "igortuag@gmail.com",
+      "preco": "4999",
+      "vendido": "false",
+      "descricao": "Esse é um novo notebook.",
+      "fotos": null
+    },
+    {
+      "id": "smartphone",
+      "nome": "Smartphone",
+      "usuario_id": "igortuag@gmail.com",
+      "preco": "4999",
+      "vendido": "false",
+      "descricao": "Esse é um novo notebook.",
+      "fotos": null
+    }
+  ]
+}
