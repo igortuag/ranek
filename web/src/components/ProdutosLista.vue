@@ -10,22 +10,37 @@
       <h2 class="titulo">{{ produto.nome }}</h2>
       <p>{{ produto.descricao }}</p>
     </div>
+    {{ url }}
   </section>
 </template>
 
 <script>
-import { api } from "../services";
+import { api } from "@/services";
+import { serialize } from "@/helpers";
 
 export default {
   name: "ProdutosLista",
   data() {
     return {
-      produtos: []
+      produtos: [],
+      produtosPorPagina: 9
     };
+  },
+  computed: {
+    url() {
+      return `/produto?_limit=${this.produtosPorPagina}${serialize(
+        this.$route.query
+      )}`;
+    }
+  },
+  watch: {
+    url() {
+      this.getProdutos();
+    }
   },
   methods: {
     getProdutos() {
-      api.get("/produto").then(({ data }) => {
+      api.get(this.url).then(({ data }) => {
         this.produtos = data;
       });
     }
