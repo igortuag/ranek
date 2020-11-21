@@ -10,7 +10,13 @@
     <input id="senha" name="senha" v-model="senha" type="password" />
 
     <label for="cep">Cep</label>
-    <input id="cep" name="cep" v-model="cep" type="text" />
+    <input
+      id="cep"
+      name="cep"
+      v-model="cep"
+      type="text"
+      @keyup="preencherCep"
+    />
 
     <label for="rua">Rua</label>
     <input id="rua" name="rua" v-model="rua" type="text" />
@@ -34,6 +40,7 @@
 
 <script>
 import { mapFields } from "@/helpers.js";
+import { getCep } from "@/services.js";
 
 export default {
   name: "UsuarioForm",
@@ -53,6 +60,19 @@ export default {
       base: "usuario",
       mutation: "UPDATE_USUARIO"
     })
+  },
+  methods: {
+    preencherCep() {
+      const cep = this.cep.replace(/\D/g, "");
+      if (cep.length === 8) {
+        getCep(cep).then(({ data: { logradouro, bairro, localidade, uf } }) => {
+          this.rua = logradouro;
+          this.bairro = bairro;
+          this.cidade = localidade;
+          this.estado = uf;
+        });
+      }
+    }
   }
 };
 </script>
