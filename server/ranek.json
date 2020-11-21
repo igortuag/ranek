@@ -22,6 +22,18 @@
       "bairro": "teste",
       "cidade": "teste",
       "estado": "teste"
+    },
+    {
+      "id": "userteste@tests.com",
+      "nome": "Usuário Testador",
+      "email": "userteste@tests.com",
+      "senha": "123",
+      "cep": "29102850",
+      "rua": "Rua Ivan Neiva Neves",
+      "numero": "42",
+      "bairro": "Residencial Coqueiral",
+      "cidade": "Vila Velha",
+      "estado": "ES"
     }
   ],
   "produto": [
