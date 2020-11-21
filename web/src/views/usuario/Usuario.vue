@@ -17,7 +17,7 @@
           >
         </li>
         <li>
-          <router-link to="/">Deslogar</router-link>
+          <button @click.prevent="deslogar">Deslogar</button>
         </li>
       </ul>
     </nav>
@@ -29,7 +29,13 @@
 
 <script>
 export default {
-  name: "Usuario"
+  name: "Usuario",
+  methods: {
+    deslogar() {
+      this.$store.dispatch("deslogarUsuario");
+      this.$router.push("/login");
+    }
+  }
 };
 </script>
 
