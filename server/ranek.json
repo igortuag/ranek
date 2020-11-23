@@ -1,4 +1,72 @@
 {
+  "transacao": [
+    {
+      "comprador_id": "igortuag@gmail.com",
+      "vendedor_id": "igortuag@gmail.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "igortuag@gmail.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereço": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "42",
+        "bairro": "Setor 02",
+        "cidade": "teste",
+        "estado": "ES"
+      },
+      "id": 1
+    },
+    {
+      "comprador_id": "igortuag@gmail.com",
+      "vendedor_id": "igortuag@gmail.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "igortuag@gmail.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereço": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "42",
+        "bairro": "Setor 02",
+        "cidade": "teste",
+        "estado": "ES"
+      },
+      "id": 2
+    },
+    {
+      "comprador_id": "igortuag@gmail.com",
+      "vendedor_id": "igortuag@gmail.com",
+      "produto": {
+        "id": "smartphone",
+        "nome": "Smartphone",
+        "usuario_id": "igortuag@gmail.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo smartphone.",
+        "fotos": null
+      },
+      "endereço": {
+        "cep": "12345678",
+        "rua": "Rua Ali Perto",
+        "numero": "42",
+        "bairro": "Setor 02",
+        "cidade": "teste",
+        "estado": "ES"
+      },
+      "id": 3
+    }
+  ],
   "usuario": [
     {
       "id": "igortuag@gmail.com",
