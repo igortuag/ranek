@@ -1502,6 +1502,14 @@
       "fotos": null,
       "usuario_id": "",
       "id": "8Axf-0v"
+    },
+    {
+      "nome": "teste",
+      "preco": "12",
+      "descricao": "teste",
+      "fotos": null,
+      "usuario_id": "",
+      "id": "v-o2REm"
     }
   ]
 }
