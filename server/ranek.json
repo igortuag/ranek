@@ -65,6 +65,28 @@
         "estado": "ES"
       },
       "id": 3
+    },
+    {
+      "comprador_id": "user@teste2.com",
+      "vendedor_id": "igortuag@gmail.com",
+      "produto": {
+        "id": "tablet",
+        "nome": "Tablet",
+        "usuario_id": "igortuag@gmail.com",
+        "preco": "4999",
+        "vendido": "false",
+        "descricao": "Esse é um novo tablet.",
+        "fotos": null
+      },
+      "endereço": {
+        "cep": "14541547",
+        "rua": "Ali perto",
+        "numero": "1",
+        "bairro": "Vilas boas",
+        "cidade": "Guaratinga",
+        "estado": "MA"
+      },
+      "id": 4
     }
   ],
   "usuario": [
