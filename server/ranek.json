@@ -1458,6 +1458,50 @@
       "vendido": "false",
       "descricao": "Esse é um novo tablet.",
       "fotos": null
+    },
+    {
+      "nome": "teste",
+      "preco": "1",
+      "descricao": "teste",
+      "fotos": null,
+      "id": "uWMc1xv"
+    },
+    {
+      "nome": "teste",
+      "preco": "1",
+      "descricao": "teste",
+      "fotos": null,
+      "id": "40k38Wv"
+    },
+    {
+      "nome": "teste",
+      "preco": "12",
+      "descricao": "teste",
+      "fotos": null,
+      "id": "v3Si2s9"
+    },
+    {
+      "nome": "teste",
+      "preco": "12",
+      "descricao": "teste",
+      "fotos": null,
+      "id": "nuxxQ00"
+    },
+    {
+      "nome": "teste",
+      "preco": "12",
+      "descricao": "teste",
+      "fotos": null,
+      "usuario_id": "igortuag@gmail.com",
+      "id": "RRgcc4B"
+    },
+    {
+      "nome": "Bicicleta",
+      "preco": "600",
+      "descricao": "Está é uma bicicleta usada",
+      "fotos": null,
+      "usuario_id": "",
+      "id": "8Axf-0v"
     }
   ]
 }
