@@ -72,4 +72,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+h2 {
+  margin: 40px 0 20px;
+}
+
+.btn {
+  background: #e80;
+}
+</style>
