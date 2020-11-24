@@ -12,7 +12,7 @@
         "descricao": "Esse é um novo smartphone.",
         "fotos": null
       },
-      "endereço": {
+      "endereco": {
         "cep": "12345678",
         "rua": "Rua Ali Perto",
         "numero": "42",
@@ -34,7 +34,7 @@
         "descricao": "Esse é um novo smartphone.",
         "fotos": null
       },
-      "endereço": {
+      "endereco": {
         "cep": "12345678",
         "rua": "Rua Ali Perto",
         "numero": "42",
@@ -56,7 +56,7 @@
         "descricao": "Esse é um novo smartphone.",
         "fotos": null
       },
-      "endereço": {
+      "endereco": {
         "cep": "12345678",
         "rua": "Rua Ali Perto",
         "numero": "42",
@@ -78,7 +78,7 @@
         "descricao": "Esse é um novo tablet.",
         "fotos": null
       },
-      "endereço": {
+      "endereco": {
         "cep": "14541547",
         "rua": "Ali perto",
         "numero": "1",

@@ -12,6 +12,14 @@
             <span>Comprador:</span> {{ venda.comprador_id }}
           </p>
         </ProdutoItem>
+        <div class="entrega">
+          <h3>Entrega:</h3>
+          <ul v-if="venda.endereco">
+            <li v-for="(value, key) in venda.endereco" :key="key">
+              {{ key }}: {{ value }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
