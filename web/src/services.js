@@ -4,6 +4,19 @@ const axiosInstance = axios.create({
   baseURL: "http://ranekapilocal.local/wp-json/api"
 });
 
+axiosInstance.interceptors.request.use(
+  config => {
+    const token = window.localStorage.token;
+    if (token) {
+      config.headers.authorization = token;
+    }
+    return config;
+  },
+  error => {
+    return Promise.reject(error);
+  }
+);
+
 export const api = {
   get(endpoint) {
     return axiosInstance.get(endpoint);

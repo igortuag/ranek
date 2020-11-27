@@ -45,8 +45,8 @@ export default new Vuex.Store({
           context.commit("UPDATE_USUARIO_PRODUTOS", response.data);
         });
     },
-    getUsuario(context, payload) {
-      api.get(`/usuario/${payload}`).then(response => {
+    getUsuario(context) {
+      api.get(`/usuario`).then(response => {
         context.commit("UPDATE_USUARIO", response.data);
         context.commit("UPDATE_LOGIN", true);
       });
@@ -62,7 +62,7 @@ export default new Vuex.Store({
           password: payload.senha
         })
         .then(response => {
-          console.log(response);
+          window.localStorage.token = `Bearer ${response.data.token}`;
         });
     },
     deslogarUsuario(context) {
