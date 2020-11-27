@@ -28,11 +28,29 @@ function get_produto_id_by_slug($slug)
     return array_shift($posts);
 }
 
+add_action('rest_pre_serve_request', function () {
+    header('Access-Control-Expose-Headers: X-Total-Count');
+});
+
 function expire_token()
 {
     return time() + (60 * 60 * 24);
 }
-
 add_action('jwt_auth_expire', 'expire_token');
+
+function my_login_screen()
+{?>
+<style type="text/css">
+#login h1 a {
+    background-image: none;
+}
+
+#backgtoblog {
+    display: none;
+}
+</style>
+<?php }
+
+add_action('login_enqueue_scripts', 'my_login_screen')
 
 ?>
