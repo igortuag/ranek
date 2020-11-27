@@ -1,7 +1,9 @@
 <template>
   <section>
     <UsuarioForm>
-      <button class="btn" @click.prevent="atualizarUsuario"></button>
+      <button class="btn" @click.prevent="atualizarUsuario">
+        Atualizar Usuário
+      </button>
     </UsuarioForm>
   </section>
 </template>
@@ -11,14 +13,14 @@ import UsuarioForm from "@/components/UsuarioForm.vue";
 import { api } from "@/services.js";
 
 export default {
-  name: "UsuarioForm",
+  name: "UsuarioEditar",
   components: {
     UsuarioForm
   },
   methods: {
     atualizarUsuario() {
       api
-        .put(`/usuario`, this.$store.state.usario)
+        .put(`/usuario`, this.$store.state.usuario)
         .then(() => {
           this.$store.dispatch("getUsuario");
           this.$router.push({ name: "usuario" });
