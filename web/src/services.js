@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000"
+  baseURL: "http://ranekapilocal.local/wp-json/api"
 });
 
 export const api = {
@@ -13,6 +13,17 @@ export const api = {
   },
   delete(endpoint) {
     return axiosInstance.delete(endpoint);
+  },
+  login(body) {
+    return axios.post(
+      `http://ranekapilocal.local/wp-json/jwt-auth/v1/token`,
+      body
+    );
+  },
+  validateToken() {
+    return axios.post(
+      `http://ranekapilocal.local/wp-json/jwt-auth/v1/token/validate`
+    );
   }
 };
 
