@@ -74,6 +74,15 @@ export default {
   margin-bottom: 40px;
 }
 
+.fotos {
+  grid-row: 1 / 3;
+}
+
+.info {
+  position: sticky;
+  top: 20px;
+}
+
 .descricao {
   font-size: 1.2rem;
 }
