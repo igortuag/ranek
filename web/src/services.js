@@ -37,7 +37,7 @@ export const api = {
     );
   },
   validateToken() {
-    return axios.post(
+    return axiosInstance.post(
       `http://ranekapilocal.local/wp-json/jwt-auth/v1/token/validate`
     );
   }
