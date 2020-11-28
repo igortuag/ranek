@@ -1,7 +1,7 @@
 <template>
   <section>
-    <ErroNotificacao :erros="erros" />
     <UsuarioForm>
+      <ErroNotificacao :erros="erros" />
       <button class="btn" @click.prevent="atualizarUsuario">
         Atualizar Usuário
       </button>
