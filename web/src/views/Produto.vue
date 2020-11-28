@@ -16,7 +16,9 @@
           </button>
           <FinalizarCompra v-else :produto="produto" />
         </transition>
-        <button class="btn" v-else disabled>Produto Vendido</button>
+        <button class="btn btn-disabled" v-else disabled>
+          Produto Vendido
+        </button>
       </div>
     </div>
     <PaginaCarregando v-else />
