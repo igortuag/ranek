@@ -7,7 +7,7 @@
     <input id="preco" name="preco" type="number" v-model="produto.preco" />
 
     <label for="fotos">Fotos</label>
-    <input id="fotos" name="fotos" type="file" ref="fotos" />
+    <input id="fotos" name="fotos" type="file" multiple ref="fotos" />
 
     <label for="descricao">Descricao</label>
     <textarea
@@ -44,6 +44,12 @@ export default {
   methods: {
     formatarProduto() {
       const form = new FormData();
+
+      const files = this.$refs.fotos.files;
+      console.log(files);
+      for (let i = 0; i < files.length; i++) {
+        form.append(files[i].name, files[i]);
+      }
 
       form.append("nome", this.produto.nome);
       form.append("preco", this.produto.preco);
