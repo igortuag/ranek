@@ -3,7 +3,7 @@
     <div v-if="produto" class="produto">
       <ul class="fotos" v-if="produto.fotos">
         <li v-for="(foto, index) in produto.fotos" :key="index">
-          <img :src="foto.scr" alt="foto.titulo" />
+          <img :src="foto.src" alt="foto.titulo" />
         </li>
       </ul>
       <div class="info">
@@ -76,6 +76,12 @@ export default {
 
 .descricao {
   font-size: 1.2rem;
+}
+
+img {
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+  border-radius: 4px;
 }
 
 .btn {
