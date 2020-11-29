@@ -8,10 +8,16 @@ import UsuarioProdutos from "../views/usuario/UsuarioProdutos.vue";
 import UsuarioEditar from "../views/usuario/UsuarioEditar.vue";
 import UsuarioCompras from "../views/usuario/UsuarioCompras.vue";
 import UsuarioVendas from "../views/usuario/UsuarioVendas.vue";
+import PaginaNaoEncontrada from "../views/PaginaNaoEncontrada.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: "*",
+    name: "PaginaNaoEncontrada",
+    component: PaginaNaoEncontrada
+  },
   {
     path: "/",
     name: "Home",
